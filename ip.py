@@ -1,12 +1,9 @@
-import socket as s
-
-my_hostname = s.gethostname()
-print("Your Hostname is: " + my_hostname)
-
-my_ip = s.gethostbyname(my_hostname)
-print("Your Ip Address is: " + my_ip)
-
-host = "github.com"
-ip = s.gethostbyname(host)
-
-print("The IP Address of " + host + " is: "  + ip)
+## importing socket module
+import socket
+## getting the hostname by socket.gethostname() method
+hostname = socket.gethostname()
+## getting the IP address using socket.gethostbyname() method
+ip_address = socket.gethostbyname(hostname)
+## printing the hostname and ip_address
+print(f"Hostname: {hostname}")
+print(f"IP Address: {ip_address}")
